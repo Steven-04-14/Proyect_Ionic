@@ -8,7 +8,7 @@
       </ion-buttons>
       <ion-title mode="md" class="ion-no-padding">
         <ion-label>
-          <ion-text color="white">Hello</ion-text>
+          <ion-text color="white">JAM</ion-text>
         </ion-label>
       </ion-title>
       <ion-buttons slot="end">
@@ -19,7 +19,7 @@
 
 <ion-content>
   <div class="topic">
-    Quieres saber tus conocimieteos ?
+    ¡Pon aprueba tus conocimientos y demuestra que eres el mejor!
   </div>
   <ion-grid>
     <ion-row>
@@ -27,7 +27,7 @@
       <ion-col size="3">
         <ion-card>
           <ion-thumbnail>
-            <img [src]="'assets/img/numeros.png'" />
+            <img [routerLink]="['/prueba-numeros']" [src]="'assets/img/numeros.png'" />
           </ion-thumbnail>
           <ion-label class="ion-text-wrap ion-text-center">Prueba de numeros </ion-label>
         </ion-card>
@@ -36,7 +36,7 @@
       <ion-col size="3">
         <ion-card>
           <ion-thumbnail>
-            <img [src]="'assets/img/figuras.png'" />
+            <img [routerLink]="['/prueba-figuras']" [src]="'assets/img/figuras.png'" />
           </ion-thumbnail>
           <ion-label class="ion-text-wrap ion-text-center">Prueba de figuras </ion-label>
         </ion-card>
@@ -45,7 +45,7 @@
       <ion-col size="3">
         <ion-card>
           <ion-thumbnail>
-            <img [src]="'assets/img/abecedario.png'" />
+            <img [routerLink]="['/prueba-abecedario']" [src]="'assets/img/abecedario.png'" />
           </ion-thumbnail>
           <ion-label class="ion-text-wrap ion-text-center">Prueba de Abecedario </ion-label>
         </ion-card>
@@ -54,7 +54,7 @@
       <ion-col size="3">
         <ion-card>
           <ion-thumbnail>
-            <img [src]="'assets/img/colores.png'" />
+            <img [routerLink]="['/prueba-colores']" [src]="'assets/img/colores.png'" />
           </ion-thumbnail>
           <ion-label class="ion-text-wrap ion-text-center">Prueba de Colores </ion-label>
         </ion-card>

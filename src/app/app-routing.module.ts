@@ -27,6 +27,26 @@ const routes: Routes = [
     path: 'prueba-colores',
     loadChildren: () => import('./prueba-colores/prueba-colores.module').then( m => m.PruebaColoresPageModule)
   },
+  {
+    path: 'quizz-abecedario',
+    loadChildren: () => import('./quizz-abecedario/quizz-abecedario.module').then( m => m.QuizzAbecedarioPageModule)
+  },
+  {
+    path: 'resultados',
+    loadChildren: () => import('./resultados/resultados.module').then( m => m.ResultadosPageModule)
+  },
+  {
+    path: 'quizz-numeros',
+    loadChildren: () => import('./quizz-numeros/quizz-numeros.module').then( m => m.QuizzNumerosPageModule)
+  },
+  {
+    path: 'quizz-colores',
+    loadChildren: () => import('./quizz-colores/quizz-colores.module').then( m => m.QuizzColoresPageModule)
+  },
+  {
+    path: 'quizz-figuras',
+    loadChildren: () => import('./quizz-figuras/quizz-figuras.module').then( m => m.QuizzFigurasPageModule)
+  },
 
 ];
 

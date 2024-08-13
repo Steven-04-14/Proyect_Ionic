@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-prueba-numeros',
@@ -7,7 +8,18 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PruebaNumerosPage implements OnInit {
 
-  constructor() { }
+  userName: string = '';
+
+  constructor(private router: Router) { }
+
+  startQuiz2() {
+    if (this.userName) {
+      localStorage.setItem('userName', this.userName);
+      this.router.navigate(['/quizz-numeros']);
+    } else {
+      alert('Por favor, ingresa tu nombre');
+    }
+  }
 
   ngOnInit() {
   }
