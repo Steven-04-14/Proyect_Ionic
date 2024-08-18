@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router, ActivatedRoute } from '@angular/router';
+import { IonImg } from '@ionic/angular';
 
 @Component({
   selector: 'app-quizz-numeros',
@@ -12,93 +13,94 @@ export class QuizzNumerosPage implements OnInit {
   quizNumber: number;
   questions = [
     {
-      text: '¿Cuál es el número natural más pequeño?',
+      text: '¿Cuál es la esfera del Dragon mas pequeña?',
+      imgPath: "assets/img/esferas.png",
       options: [
-        { text: '0', correct: true },
-        { text: '1', correct: false },
-        { text: '2', correct: false },
-        { text: '3', correct: false }
+        {  text: '', correct: true, imgPath: "assets/img/esfera1.png"},
+        { text: '', correct: false, imgPath: "assets/img/esfera2.png" },
+        { text: '', correct: false, imgPath: "assets/img/esfera3.png"},
+        { text: '', correct: false, imgPath: "assets/img/esfera4.png"}
       ]
     },
     {
       text: '¿Cuál es el siguiente número natural después del 5?',
       options: [
-        { text: '6', correct: true },
-        { text: '7', correct: false },
-        { text: '4', correct: false },
-        { text: '8', correct: false }
+        { text: '', correct: true, imgPath: "assets/img/esfera6.png" },
+        { text: '', correct: false, imgPath: "assets/img/esfera7.png"},
+        { text: '', correct: false, imgPath: "assets/img/esfera4.png"},
+        { text: '', correct: false, imgPath: "assets/img/esfera2.png" }
       ]
     },
     {
       text: '¿Qué número es mayor que 3 pero menor que 5?',
       options: [
-        { text: '2', correct: false },
-        { text: '4', correct: true },
-        { text: '6', correct: false },
-        { text: '3', correct: false }
+        { text: '', correct: false, imgPath: "assets/img/esfera2.png" },
+        { text: '', correct: true, imgPath: "assets/img/esfera4.png" },
+        { text: '', correct: false, imgPath: "assets/img/esfera6.png" },
+        { text: '', correct: false, imgPath: "assets/img/esfera3.png"}
       ]
     },
     {
       text: '¿Cuál es el resultado de 2 + 2?',
       options: [
-        { text: '3', correct: false },
-        { text: '4', correct: true },
-        { text: '5', correct: false },
-        { text: '6', correct: false }
+        { text: '', correct: false,  imgPath: "assets/img/esfera3.png" },
+        { text: '', correct: true,  imgPath: "assets/img/esfera4.png"},
+        { text: '', correct: false, imgPath: "assets/img/esfera5.png" },
+        { text: '', correct: false, imgPath: "assets/img/esfera6.png" }
       ]
     },
     {
-      text: '¿Qué número viene justo antes del 10?',
+      text: '¿Qué número viene justo antes del 7?',
       options: [
-        { text: '9', correct: true },
-        { text: '8', correct: false },
-        { text: '7', correct: false },
-        { text: '11', correct: false }
+        { text: '', correct: true, imgPath: "assets/img/esfera6.png" },
+        { text: '', correct: false, imgPath: "assets/img/esfera3.png" },
+        { text: '', correct: false, imgPath: "assets/img/esfera2.png" },
+        { text: '', correct: false, imgPath: "assets/img/esfera4.png" }
       ]
     },
     {
       text: '¿Cuál de estos números es un número impar?',
       options: [
-        { text: '4', correct: false },
-        { text: '6', correct: false },
-        { text: '7', correct: true },
-        { text: '8', correct: false }
+        { text: '', correct: false, imgPath: "assets/img/esfera4.png" },
+        { text: '', correct: false, imgPath: "assets/img/esfera6.png" },
+        { text: '', correct: true, imgPath: "assets/img/esfera7.png" },
+        { text: '', correct: false, imgPath: "assets/img/esfera2.png" }
       ]
     },
     {
       text: '¿Qué número es el doble de 3?',
       options: [
-        { text: '5', correct: false },
-        { text: '6', correct: true },
-        { text: '7', correct: false },
-        { text: '8', correct: false }
+        { text: '', correct: false, imgPath: "assets/img/esfera5.png" },
+        { text: '', correct: true, imgPath: "assets/img/esfera6.png" },
+        { text: '', correct: false, imgPath: "assets/img/esfera7.png" },
+        { text: '', correct: false, imgPath: "assets/img/esfera4.png" }
       ]
     },
     {
       text: '¿Qué número es el triple de 2?',
       options: [
-        { text: '4', correct: false },
-        { text: '6', correct: true },
-        { text: '8', correct: false },
-        { text: '9', correct: false }
+        { text: '', correct: false, imgPath: "assets/img/esfera4.png" },
+        { text: '', correct: true, imgPath: "assets/img/esfera6.png"},
+        { text: '', correct: false, imgPath: "assets/img/esfera1.png" },
+        { text: '', correct: false, imgPath: "assets/img/esfera2.png" }
       ]
     },
     {
       text: '¿Cuál es el número par más pequeño?',
       options: [
-        { text: '0', correct: true },
-        { text: '1', correct: false },
-        { text: '2', correct: false },
-        { text: '3', correct: false }
+        { text: '', correct: true, imgPath: "assets/img/esfera2.png" },
+        { text: '', correct: false, imgPath: "assets/img/esfera1.png" },
+        { text: '', correct: false, imgPath: "assets/img/esfera4.png" },
+        { text: '', correct: false, imgPath: "assets/img/esfera3.png" }
       ]
     },
     {
-      text: '¿Cuál es la suma de 7 y 5?',
+      text: '¿Cuál es la suma de 5 y 2?',
       options: [
-        { text: '11', correct: false },
-        { text: '12', correct: true },
-        { text: '13', correct: false },
-        { text: '14', correct: false }
+        { text: '', correct: false, imgPath: "assets/img/esfera4.png" },
+        { text: '', correct: true, imgPath: "assets/img/esfera7.png" },
+        { text: '', correct: false, imgPath: "assets/img/esfera6.png" },
+        { text: '', correct: false, imgPath: "assets/img/esfera1.png" }
       ]
     }
   ]
@@ -151,7 +153,7 @@ export class QuizzNumerosPage implements OnInit {
   }
 
   finishQuiz() {
-    this.router.navigate(['/resultados'], {
+    this.router.navigate(['/home'], {
       state: {
         score: this.score,
         quizName: this.quizName,

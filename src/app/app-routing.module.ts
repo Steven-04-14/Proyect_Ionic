@@ -5,13 +5,11 @@ const routes: Routes = [
 
   {
     path: '',
-    redirectTo: 'tabs',
+    redirectTo: 'intro',
     pathMatch: 'full'
   },
+
   {
-    path: 'tabs',
-    loadChildren: () => import('./pages/tabs/tabs.module').then( m => m.TabsPageModule)
-  },  {
     path: 'prueba-numeros',
     loadChildren: () => import('./prueba-numeros/prueba-numeros.module').then( m => m.PruebaNumerosPageModule)
   },
@@ -46,6 +44,14 @@ const routes: Routes = [
   {
     path: 'quizz-figuras',
     loadChildren: () => import('./quizz-figuras/quizz-figuras.module').then( m => m.QuizzFigurasPageModule)
+  },
+  {
+    path: 'intro',
+    loadChildren: () => import('./pages/intro/intro.module').then( m => m.IntroPageModule)
+  },
+  {
+    path: 'home',
+    loadChildren: () => import('./pages/home/home.module').then( m => m.HomePageModule)
   },
 
 ];

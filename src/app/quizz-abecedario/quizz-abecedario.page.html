@@ -1,18 +1,24 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-title>Quizz de abecedario</ion-title>
-  </ion-toolbar>
-</ion-header>
-
+<div class="shapedividers_com-4181">
+</div>
 <ion-content>
   <div *ngIf="question">
     <ion-card>
       <ion-card-header>
         <ion-card-title>{{ question.text }}</ion-card-title>
+        <div>
+          <div style="float: left;">
+            <img src="assets/img/goku--baile.gif " height="100px" width="100px">
+          </div>
+          <div>
+            <div style="float: right;">
+              <img src="assets/img/goku--baile.gif " height="100px" width="100px">
+            </div>
+          </div>
+        </div>
       </ion-card-header>
       <ion-card-content>
         <ion-list>
-          <ion-item *ngFor="let option of question.options" (click)="selectOption(option)">
+          <ion-item *ngFor="let option of question.options" (click)="selectOption(option)" class="animate__animated animate__fadeInDown">
             <ion-label>{{ option.text }}</ion-label>
           </ion-item>
         </ion-list>

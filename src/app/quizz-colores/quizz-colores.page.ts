@@ -11,7 +11,8 @@ export class QuizzColoresPage implements OnInit {
   quizNumber: number;
   questions = [
     {
-      text: "¿Cuál de estos es el color 'rojo'?",
+      text: "¿Cual es el color del Báculo Sagrado?",
+      imagen: "assets/img/goku-color-rojo.png",
       options: [
         { text: "🔵", correct: false },
         { text: "🔴", correct: true },
@@ -20,7 +21,8 @@ export class QuizzColoresPage implements OnInit {
       ]
     },
     {
-      text: "¿Cuál de estos es el color 'azul'?",
+      text: "¿Cuál es el color del traje de Vegeta?",
+      imagen: "assets/img/vegeta-color-azul.png",
       options: [
         { text: "🔵", correct: true },
         { text: "🟠", correct: false },
@@ -29,7 +31,8 @@ export class QuizzColoresPage implements OnInit {
       ]
     },
     {
-      text: "¿Cuál de estos es el color 'verde'?",
+      text: "¿De que color es el dragon ?",
+      imagen: "assets/img/shenlong-color-verde.png",
       options: [
         { text: "🟣", correct: false },
         { text: "🟢", correct: true },
@@ -38,7 +41,8 @@ export class QuizzColoresPage implements OnInit {
       ]
     },
     {
-      text: "¿Cuál de estos es el color 'amarillo'?",
+      text: "¿De que color es la nube voladora?",
+      imagen: "assets/img/nube-color-amarillo.png",
       options: [
         { text: "🔴", correct: false },
         { text: "🟠", correct: false },
@@ -47,7 +51,8 @@ export class QuizzColoresPage implements OnInit {
       ]
     },
     {
-      text: "¿Cuál de estos es el color 'negro'?",
+      text: "¿De que color es el traje de Goku Black?",
+      imagen: "assets/img/goku-color-negro.png",
       options: [
         { text: "⚪", correct: false },
         { text: "🔵", correct: false },
@@ -56,7 +61,8 @@ export class QuizzColoresPage implements OnInit {
       ]
     },
     {
-      text: "¿Cuál de estos es el color 'blanco'?",
+      text: "¿De que color es el cabello de Goku?",
+      imagen: "assets/img/ultra-color-blanco.png",
       options: [
         { text: "⚫", correct: false },
         { text: "🟠", correct: false },
@@ -65,7 +71,8 @@ export class QuizzColoresPage implements OnInit {
       ]
     },
     {
-      text: "¿Cuál de estos es el color 'naranja'?",
+      text: "¿De que color son las esferas del dragon?",
+      imagen: "assets/img/esferas.png",
       options: [
         { text: "🟠", correct: true },
         { text: "🟡", correct: false },
@@ -74,7 +81,8 @@ export class QuizzColoresPage implements OnInit {
       ]
     },
     {
-      text: "¿Cuál de estos es el color 'morado'?",
+      text: "¿De que color es el dragon?",
+      imagen: "assets/img/dragon-color-morado.png",
       options: [
         { text: "🟢", correct: false },
         { text: "🟣", correct: true },
@@ -83,7 +91,8 @@ export class QuizzColoresPage implements OnInit {
       ]
     },
     {
-      text: "¿Cuál de estos es el color 'rosa'?",
+      text: "¿De que color es Majin Buu?",
+      imagen: "assets/img/majin-color-rosa.png",
       options: [
         { text: "🟣", correct: false },
         { text: "🟤", correct: false },
@@ -92,7 +101,8 @@ export class QuizzColoresPage implements OnInit {
       ]
     },
     {
-      text: "¿Cuál de estos es el color 'marrón'?",
+      text: "¿De que color es la tortuga?",
+      imagen: "assets/img/tortuga-color-marron.png",
       options: [
         { text: "🔴", correct: false },
         { text: "💖", correct: false },

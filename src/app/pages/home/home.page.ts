@@ -1,4 +1,5 @@
-import { AfterContentChecked, Component, OnInit } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+
 @Component({
   selector: 'app-home',
   templateUrl: './home.page.html',
@@ -6,13 +7,9 @@ import { AfterContentChecked, Component, OnInit } from '@angular/core';
 })
 export class HomePage implements OnInit {
 
-
   constructor() { }
 
   ngOnInit() {
-      
   }
-
-
 
 }

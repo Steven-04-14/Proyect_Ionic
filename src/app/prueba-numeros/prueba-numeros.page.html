@@ -1,17 +1,16 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-title>Bienvenido al Quizz de Numeros</ion-title>
-  </ion-toolbar>
-</ion-header>
 
-<ion-content>
-  <ion-card>
+<div class="shapedividers_com-4181">
+</div>
+<ion-content >
+  <ion-card >
     <ion-card-header>
-      <ion-card-title>¡Bienvenido!</ion-card-title>
+      <ion-card-title class="ion-margin-top">¡Bienvenido al Quizz de Numeros!</ion-card-title>
+        <img src="/assets/img/saludo.gif" alt="height=300px" width="300px" style="border-radius: 20px;">
     </ion-card-header>
-    <ion-card-content>
+    <ion-card-content >
       <ion-input placeholder="Ingresa tu nombre" [(ngModel)]="userName"></ion-input>
       <ion-button (click)="startQuiz2()">Comenzar</ion-button>
+      <ion-button [routerLink]="'/home'">Regresar</ion-button>
     </ion-card-content>
   </ion-card>
 </ion-content>

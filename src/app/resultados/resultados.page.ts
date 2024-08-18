@@ -21,7 +21,7 @@ export class ResultadosPage implements OnInit {
   }
 
   goHome() {
-    this.router.navigate(['/tabs/home']);
+    this.router.navigate(['/home']);
   }
 
 }
