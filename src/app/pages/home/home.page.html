@@ -5,17 +5,16 @@
     </ion-title>
   </ion-toolbar>
 </ion-header>
-<div class="shapedividers_com-4181">
-</div>
 
-<ion-content >
+<ion-content>
   <div class="ion-text-center" class="animate__animated animate__fadeInDown">
     <h4> ¡Pon aprueba tus conocimientos y demuestra que eres el mejor!</h4>
   </div>
   <ion-card mode="ios">
     <ion-card-content>
       <p class="space-between">
-          <ion-button color="light" mode="md" class="ion-no-padding-btn" shape="round" [routerLink]="['/prueba-numeros']">
+        <ion-button (click)="playSound1()"></ion-button>
+          <ion-button (click)="playSound()" color="light" mode="md" class="ion-no-padding-btn" shape="round" [routerLink]="['/prueba-numeros']">
             <ion-icon name="play" color="primary"></ion-icon>
             <ion-label>Prueba de Numeros</ion-label>
             <img src="assets/img/numeros2-dragon.png" width="150px" height="150px">
@@ -24,11 +23,10 @@
     </ion-card-content>
   </ion-card>
 
-
   <ion-card mode="ios" class="animate__animated animate__fadeInDown">
     <ion-card-content>
       <p class="space-between">
-          <ion-button color="light" mode="md" class="ion-no-padding-btn" shape="round" [routerLink]="['/prueba-colores']">
+          <ion-button (click)="playSound()" color="light" mode="md" class="ion-no-padding-btn" shape="round" [routerLink]="['/prueba-colores']">
             <ion-icon name="play" color="primary"></ion-icon>
             <ion-label>Prueba de Colores</ion-label>
             <p>
@@ -42,7 +40,7 @@
   <ion-card mode="ios" class="animate__animated animate__fadeInDown">
     <ion-card-content>
       <p class="space-between">
-          <ion-button color="light" mode="md" class="ion-no-padding-btn" shape="round" [routerLink]="['/prueba-abecedario']">
+          <ion-button (click)="playSound()" color="light" mode="md" class="ion-no-padding-btn" shape="round" [routerLink]="['/prueba-abecedario']">
             <ion-icon name="play" color="primary"></ion-icon>
             <ion-label>Prueba de Abecedario</ion-label>
             <img src="assets/img/abecedario2-dragon.png" width="150px" height="150px">
@@ -54,7 +52,7 @@
   <ion-card mode="ios" class="animate__animated animate__fadeInDown">
     <ion-card-content>
       <p class="space-between">
-          <ion-button color="light" mode="md" class="ion-no-padding-btn" shape="round" [routerLink]="['/prueba-figuras']">
+          <ion-button (click)="playSound()" color="light" mode="md" class="ion-no-padding-btn" shape="round" [routerLink]="['/prueba-figuras']">
             <ion-icon name="play" color="primary"></ion-icon>
             <ion-label>Prueba de Fguras Geometricas</ion-label>
             <img src="assets/img/figuras2-dragon.png" width="150px" height="150px">

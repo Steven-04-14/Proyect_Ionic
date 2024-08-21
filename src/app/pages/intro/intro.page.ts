@@ -10,7 +10,10 @@ export class IntroPage implements OnInit {
 
 
   router = inject(Router)
-  constructor() { }
+  constructor(
+    
+  ) { 
+  }
 
   ngOnInit() {
   }
